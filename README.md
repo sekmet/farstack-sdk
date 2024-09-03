@@ -12,25 +12,25 @@ With the provided methods, you can use to easily query and fetch data from the f
 #### With NPM
 
 ```sh
-npm install @sekmet/farstack
+npm install farstack-sdk
 ```
 
 #### With yarn
 
 ```sh
-yarn add @sekmet/farstack
+yarn add farstack-sdk
 ```
 
 #### With pnpm
 
 ```sh
-pnpm install @sekmet/farstack
+pnpm install farstack-sdk
 ```
 
 #### With bun
 
 ```sh
-bun add @sekmet/farstack
+bun add farstack-sdk
 ```
 
 ## Getting started
@@ -40,7 +40,7 @@ To use the SDK you will need a Farstack API key, once you have it you can call t
 **`init` must be called before calling fetchQuery or  fetchQueryWithPagination**.
 
 ```typescript
-import { init } from "@sekmet/farstack";
+import { init } from "farstack-sdk";
 
 init("apiKey");
 ```
@@ -72,7 +72,7 @@ init("apiKey");
 ##### Example
 
 ```typescript
-import { fetchQuery } from "@sekmet/farstack";
+import { fetchQuery } from "farstack-sdk";
 
 const { data, error } = await fetchQuery(query, variables);
 ```
@@ -96,7 +96,7 @@ It returns a promise with an object, which contains the following properties:
 ##### Example
 
 ```typescript
-import { fetchQueryWithPagination } from "@sekmet/farstack";
+import { fetchQueryWithPagination } from "farstack-sdk";
 
 const { data, error, hasNextPage, hasPrevPage, getNextPage, getPrevPage } =
   await fetchQueryWithPagination(query, variables);

@@ -1,6 +1,6 @@
 {
-  "name": "@sekmet/farstack",
-  "version": "0.0.1",
+  "name": "farstack-sdk",
+  "version": "0.0.2",
   "description": "",
   "sideEffects": false,
   "main": "dist/cjs/index.js",
